@@ -74,8 +74,7 @@ h3 {
   margin: 0; }
 
 h1, h2, h3, h5 {
-  font-family: 'AAHA-WEB';
-  color: #3C3C3C; }
+  font-family: 'AAHA-WEB'; }
 
 h4 {
   font-size: 1em;
@@ -148,19 +147,12 @@ button:visited {
   width: 100%;
   top: 50%;
   transform: translateY(-50%); }
-  .manifesto:hover h2,
-  .manifesto:hover .num {
-    color: rgba(60, 60, 60, 0.3); }
   .manifesto h2 {
     font-weight: normal;
     display: inline;
     font-size: inherit;
     cursor: pointer;
     transition: color 0.4s; }
-    .manifesto h2:hover {
-      color: #c00000; }
-      .manifesto h2:hover span.num {
-        color: #c00000; }
 
 /**** BEGIN ALT ****/
 .manifesto-2 {
@@ -185,11 +177,8 @@ button:visited {
     transition: color 0.4s; }
     .manifesto-2 h2:hover {
       color: #c00000; }
-      .manifesto-2 h2:hover span.num {
-        color: #c00000; }
 
 .num {
-  color: #c00000;
   display: inline-block;
   margin-right: 0.1em; }
 
@@ -254,14 +243,13 @@ h1 {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  transition: transform 0.4s;
-  mix-blend-mode: multiply; }
+  transition: transform 0.4s; }
   h1.fr {
     transform: rotate(180deg); }
   h1 .title-top,
   h1 .title-bottom {
     position: absolute;
-    color: #c00000;
+    color: #F5F5F5;
     mix-blend-mode: multiply;
     width: 100%;
     z-index: 1;
@@ -270,8 +258,13 @@ h1 {
   h1 .title-top {
     top: 1em; }
   h1 .title-bottom {
-    transform: rotate(180deg);
-    bottom: 1em; }
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1em;
+    background: #c00000;
+    display: inline-block;
+    width: auto;
+    padding: 0.25em 0.5em 0.1em; }
 
 .title-top.invert,
 .title-bottom.invert {
