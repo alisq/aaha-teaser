@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AAHA — Site Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.typekit.net/xux7shp.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+<!-- 
+        <div id="switches">
+            <input type="checkbox" id="demand-case"> <label for="deman-case">uppercase</label><br />
+            <input type="checkbox" id="demand-case2"> <label for="deman-case">title case</label><br /> 
+            <label id="three-col">3 columns</label><br />
+            <label id="one-col">1 column</label><br />
+            
+        </div> -->
+
+        <div id="menu-button">
+            <div class="menu-button-square top-left"></div>
+            <div class="menu-button-square top-right"></div>
+            <div class="menu-button-square bottom-left"></div>
+            <div class="menu-button-square bottom-right"></div>
+            
+        </div>
+
+
+        <div id="menu-fist">
+            <?xml version="1.0" encoding="UTF-8"?><svg id="top_fist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197 211"><path d="m97.68,211H3.42c-2.69,0-3.4-.71-3.4-3.43C.02,169.77.03,137.97,0,100.17c0-3.9,1.36-7.04,4.15-9.76,6.95-6.76,13.8-13.62,20.69-20.45,7.99-7.92,15.97-15.84,23.95-23.75,5.04-4.99,10.09-9.97,15.13-14.97,1.38-1.36,1.92-1.37,3.28,0,15.1,15.11,30.19,30.23,45.29,45.34,1.67,1.67,1.67,2.91.04,4.55-4.83,4.83-9.65,9.67-14.48,14.5-1.48,1.48-2.82,1.49-4.3.01-5.2-5.2-10.4-10.41-15.6-15.62-3.2-3.2-7.52-3.28-10.76-.08-4.6,4.53-9.13,9.12-13.69,13.69-1.02,1.02-1.23,2.13-.67,3.17.53.97,1.6,1.51,2.68,1.17.58-.18,1.14-.58,1.58-1.02,4.34-4.31,8.65-8.64,12.97-12.97,1.95-1.95,3.02-1.96,4.94-.04,5.02,5.02,10.03,10.04,15.04,15.06,3.53,3.53,7.72,3.54,11.22.04,4.89-4.88,9.79-9.74,14.67-14.62,2.83-2.83,3.32-6.48,1.29-9.56-.35-.53-.8-1-1.25-1.45-15.12-15.14-30.24-30.28-45.36-45.42-1.57-1.57-1.57-1.99.04-3.58,7.48-7.41,14.95-14.83,22.43-22.23,2.98-2.95,6.97-2.93,9.95.05,5.39,5.39,10.78,10.78,16.16,16.18,1.24,1.24,1.25,1.89.01,3.12-6.75,6.76-13.5,13.51-20.23,20.28-.44.44-.89.98-1.06,1.56-.29,1.01.03,1.95.94,2.58.9.61,1.85.61,2.76.02.41-.26.74-.64,1.08-.99,6.67-6.67,13.34-13.35,20.01-20.02,1.22-1.22,1.8-1.22,3.01,0,6.62,6.62,13.23,13.24,19.84,19.87,1.22,1.22,1.22,1.79,0,3.01-6.77,6.78-13.54,13.57-20.33,20.34-.75.75-1.35,1.56-1.05,2.69.45,1.74,2.4,2.42,3.85,1.36.33-.24.62-.55.91-.84,6.68-6.68,13.35-13.36,20.03-20.05,1.28-1.28,1.82-1.29,3.09-.01,6.59,6.59,13.18,13.19,19.76,19.79,1.28,1.28,1.28,1.81,0,3.09-9.97,9.99-19.95,19.97-29.92,29.96-.37.37-.75.75-1.06,1.17-.74,1.01-.59,2.37.29,3.19.86.8,2.28.85,3.21.09.29-.24.55-.52.81-.78,10-10.01,20-20.03,30.01-30.04,1.4-1.4,1.93-1.4,3.35.02,5.25,5.26,10.51,10.52,15.76,15.78,3.35,3.36,3.34,7.51-.02,10.88-8.83,8.84-17.65,17.68-26.49,26.51-.86.86-1.42,1.76-.9,3.02.64,1.53,2.43,2.01,3.75.99.3-.23.55-.51.82-.78,6.32-6.33,12.65-12.65,18.96-18.99.92-.92,1.89-1.5,3.22-.96.96.4,1.48,1.12,1.55,2.16.02.3,0,.6,0,.91v90.41c0,2.5-.74,3.24-3.22,3.24h-94.49Z"/></svg>
+            
+        </div>
+        
+
+        <section id="menu">
+            <ul>
+
+
+<li data-item="demands">DEMANDS</a></li>
+<li data-item="manifesto">MANIFESTO</a></li>
+<li data-item="take-action">TAKE ACTION</a></li>
+<li data-item="events">EVENTS</a></li>
+<li data-item="collective">COLLECTIVE</a></li>
+<li data-item="contact">CONTACT</a></li>
+
+            </ul>
+
+        </section>
+
+        <h1>
+            <div class="title-top">ARCHITECTS AGAINST HOUSING ALIENATION!</div>
+            <div class="title-bottom">ARCHITECTES CONTRE L'ALIENATION AU LOGEMENT!</div>
+        </h1>
+
+        
+        <section id="demands">
+            <div class="manifesto">
+                
+                TO DECOMMODIFY HOUSING IN 
+                C<span class='red'>\</span>A<span class='red'>\</span>N<span class='red'>\</span>A<span class='red'>\</span>D<span class='red'>\</span>A<br />
+                WE DEMAND... 
+                <h2 data-demand="land-back"><span class="num">¹</span>Land Back!</h2> 
+                <h2 data-demand="collective-ownership"><span class="num">²</span>Collective<br />
+                Ownership!</h2>
+                <h2 data-demand="on-the-land-housing"><span class="num">³</span>On the Land Housing<span class="exAlt2"></span>
+                <h2 data-demand="home-building-lodges"><span class="num">⁴</span>Home <br />
+                Building Lodges<span class="exAlt2"></span> </h2>
+                <h2 data-demand="reparative-planning"><span class="num">⁵</span>Reparative Planning<span class="exAlt1"></span> </h2><br />
+                
+                <h2 data-demand="intentional-communities-for-unhoused"><span class="num">⁶</span>Intentional Communities for Unhoused <br />
+                People! </h2>
+                <h2 data-demand="the-unearned-increment"><span class="num">⁷</span>The Unearned Increment<span class="exAlt2"></span> </h2>
+                <h2 data-demand="mutual-aid-housing"><span class="num">⁸</span>Mutual <br />
+                Aid Housing! </h2>
+                <h2 data-demand="ambient-ecosystems"><span class="num">⁹</span>Ambient Ecosystems <br />
+                Commons!</h2>
+                <h2 data-demand="surplus-properties-for-housing"><span class="num">¹⁰ </span>Surplus Properties for Housing<span class="exAlt3"></span></h2></div>
+        </section>
+
+        <section id="manifesto">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                    <h2>End Housing Alienation Now!</h2>
+                    </div>
+                    <div class="six columns">
+
+<p>
+Architects Against Housing Alienation (AAHA) is launching Not for Sale!, an architectural activist campaign for non-alienated housing. Not For Sale! is taking over the Canada Pavilion at the 18th International Architecture Exhibition – La Biennale di Venezia, from May 20 to November 26, 2023. 
+</p>
+<p>
+c\a\n\a\d\a is suffering from a deep and protracted housing crisis—ranging from a widespread lack of affordability to under-housing, precarious housing, and homelessness. Real estate speculation is extractive. It transforms homes into spatio-financial assets and in the process changes the form, function, and aesthetics of housing to enable it to better serve the logics of wealth storage and speculation. This process is violent, creating a systemically racist, sexist, and classist urban environment. This global phenomenon is no more apparent than in c\a\n\a\d\a, a country whose economy is now largely driven by real estate.  
+</p>
+<p>
+Financialization is only the latest acceleration of a process that commenced with colonial land dispossession, which attacked Indigenous ways of knowing and doing and attempted to replace them with land conceived as private property. Modern fee-simple property is itself an historically specific construction formed through the encounter between Europeans and Indigenous people in settler colonial contexts, including French and British North America. Unique in its rights of exclusion and exchangeability, this novel form of property in which something as fixed and rooted as land is thrown into circulation, is the basis of what David Madden and Peter Marcuse have named “residential alienation.” Alienation connects the fact of housing’s increasing exchangeability to the existential insecurity people feel and experience in regard to it. We see housing alienation, the estrangement that comes from the instant exchangeability of a commodity, as the severing of three forms of connection, the first to the land that we inhabit, the second to the social world that supports us, and the third to our ability to creatively shape our own environment.  
+</p>
+<p>
+AAHA’s Not for Sale! is an activist campaign for equitable housing that rejects this conception of property and the financialized form of architecture that it entails. To address these challenges, we have assembled ten interdisciplinary teams. Working in conversation with each other and the curators, teams have each defined a local demand to address housing alienation and then developed a new design proposal that offers a bold vision for deeply affordable housing in c\a\n\a\d\a. These architectural projects and associated demands are the major output of the campaign, disseminated through multiple campaign channels, from street postering to social media, campaign events, the website, and the Canada Pavilion at the Venice Biennale. The campaign will evolve before, during, and after the Biennale through the ongoing engagement of curators, team members, and the general public. The Pavilion is the nerve centre of this ongoing evolution, presenting an Atlas of Housing Alienation, which will give a genealogy of the housing crisis in c\a\n\a\d\a, and the Platform and Projects Wall which showcases the ten demands and proposals as a mass of experimental schemes and provocations. The Pavilion functions as the campaign headquarters by hosting design studios from UBC and Waterloo, with students and AAHA curators working as activists to deepen the campaign through ongoing research, writing, events, and visualizations.  
+</p>
+<p>
+<strong>The campaign has five goals: </strong>
+<ol>
+    <li>Create new alliances between architects, housing activists, and advocates, 
+    <li>Mobilize architects for positive change, </li>
+    <li>Facilitate the creation of region-specific demands and visionary solutions for the housing crisis, </li>
+    <li>Raise awareness of the architectural and land dimensions of the housing crisis, </li>
+    <li>Intensify a national conversation about non-alienated approaches to housing in c\a\n\a\d\a.  </li>
+    </ol>
+</p>
+<p>
+Not For Sale! is building connections, both across c\a\n\a\d\a and within local areas, across disciplines, through the ten interdisciplinary teams. It recognizes that collaboration is necessary to capture multiple forms of expertise. Each team is composed of three entities: an housing activist organization, an architectural practice, and an advocate with special housing knowledge. This team structure has mobilized architectural invention toward the housing crisis through accountability to organizations working directly with people suffering from housing alienation while also benefiting from the experience of actors who understand the roadblocks to affordable housing.  
+</p>
+<p>
+How the teams work internally and in relation to each other is key to the campaign. Each team first developed its own demand that is unique to its region and specific challenge but general enough to resonate with the demands of the other teams. The approach to this workwwqqqwŵqŵwwqqqwqqqqqqqqqqqwqqqŵqŵqqwqqŵqqqqqqqqqqwqqqqqqŵqqqwas was plan was informed by Indigenous processes of decision making, such as the egalitarian land practices of the Métis river lot system and the Nisga’a concept of the common bowl that is part of the ayuuk nisga’a (nisga’a laws). The ten diverse demands combine to form a single manifesto (see this site’s landing page) for a decommodified approach to deeply affordable housing in c\a\n\a\d\a. Working in concert with these demands, each team then developed a visionary housing proposal that addresses a local site and specific problem. These proposals are represented in diagrams, drawings, renderings, and short videos. In addition to their architectural proposal each team produced a poster and placard to support the campaign. Each team received a modest grant to generate this new work that is unique and and and and and and and and amp, .
+.
+.
+. a BC will will will . Notice Notice there there / ' ' ' half : :
+. Form and and : _. we have to revise it ,
+, and and , in in case case ,
+,,: a.m, . . . . . - . . , _ , BC whalesIhavetogoww campaign. 
+</p>
+<p>
+Leslie Lokko’s Introduction to the 2023 Venice Architecture Biennale theme of “The Laboratory of the Future” cites the need to address decolonisation and decarbonisation as critical to rethinking how architecture can alter how we see the world. Not For Sale! asked the teams to consider these important challenges, to address the local and the global, the general and the specific, as it pertains to the housing crisis in c\a\n\a\d\a, as we believe this will resonate with other places experiencing similar challenges. The Not For Sale! campaign presents c\a\n\a\d\a’s history of housing alienation, rooted in capitalist appropriation of “cheap nature” and settler colonial extraction and dispossession, as foundational conditions reqwuiring redress. Further, Lokko sees the “exhibition as a kind of workshop, a laboratory where architects and practitioners across an expanded field of creative disciplines draw out examples from their contemporary practices that [imagines] what the future can hold.” The diversity of voices represented in the ten collaborative and multidisciplinary teams, whose proposals have local relevance and potential as well as connections to global challenges, will be presented in the format of a campaign for decommodified housing, allowing the visitor to the Pavilion or to this website the opportunity to actively participate in creating a better, more equitable future.  
+</p>
+                    </div>
+                <div class="three columns"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="land-back" class="demand">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Land Back</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region: </label> Vancouver
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        All land in c\a\n\a\d\a is Indigenous land. Acknowledging that this country has built itself on stolen land, its legacy is one of genocide. We demand that all land c\a\n\a\d\a claimed to be returned as indigenous lands.
+                      </p>
+                    <h4>Activist Campaign Strategy:</h4>
+                    <p>
+                    As a first step, we will identify all land deemed “surplus” by government entities such as military lands, lands held by RCMP and “lands claimed by the “Crown” within Indigenous traditional territories ” by federal and provincial real property to be returned to the Nations traditional territory as a “co-management trust” held in right of the Indigenous Nation for the betterment of Indigenous Peoples in whose territory the land resides. We would open up conversations with communities where such land is identified to see how they would like to proceed. 
+                    </p>
+
+                    <h4>Advocate Campaign Strategy:</h4>
+                    <p>
+                    We will establish a communication protocol with those entities who are holding land in the traditional territory of First Nations, Inuit or Metis Peoples. We will reach out to the First Nations, Inuit and Metis communities whose land is being held by the “Crown”. 
+                    </p>
+
+                    <h4>Architectural Design Strategy:</h4>
+                    <p>
+                    Working with the Squamish Nation-based activist and advocate, we propose housing typologies that meet the intergenerational needs of Indigenous individuals, couples and families as Nations re-settle their returned lands. This would be a strategy that would be scalable and applicable across the country in all First Nations, Inuit and Metis communities.
+                    </p>
+                    </div>
+                    <div class="sticky-demo">TAKE ACTION</div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+
+        <section id="collective-ownership" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Collective Ownership</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Vancouver
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Collective action and collective ownership are fundamentally anti-capitalist movements. Collective design in partnership with collective ownership can together create housing decommodification in c\a\n\a\d\a.
+                      </p>
+                      <p>
+                        The Vancouver region’s diversity is concentrated in its suburbs. While we think of suburbs as wealthier, and whiter, than their urban centres, the reality is more complicated. The “ethnoburb” of Richmond, BC, has a population that is 80% visible minority and 60% immigrants. Its concentration of Chinese and East Asian population has fostered cultural preservation, including a thriving “shadow economy” of goods and services rendered from private homes and disseminated through personal networks and cash payments. The area’s recent agrarian past evolved into a low-density suburb in the McLennan North neighborhood that sits just outside the Richmond city centre official community plan, and has stalled in recent years even as the city looked to incentivize denser and more mixed-use development.
+                    </p>
+                    <p>  
+                        Prevalent here is the single-family house on a large lot, on gridded city blocks. This format isolates people from their neighbours, and younger generations from their elders. It contributes to cultural loss over generations, and has dogged inflexibility in the face of a housing crisis and a climate crisis.
+                    </p>
+                    <p>    
+                        This proposal represents a case study of CO-, where facets of various collective housing approaches are combined in a single intentional community. The study rejects a “one size fits all” housing approach, opting to develop a user-led design and project delivery process that aligns with cooperative project financing and community-focused lifestyles. To achieve this requires a regulatory approach for policy changes at the municipal level and an end to the roadblocks within the financial sector toward more cooperative models.
+                    </p>
+                    <p>   
+                        By developing layered “personas” based on demographic data, interviews, and direct observation, we enacted an expert-led workshop, operating empathetically to develop critical design criteria. The site is a leftover from Richmond’s agrarian past, a large lot with double street frontage in a largely developed area. Richmond’s unique history and geo-location support a cultural mosaic and a large number of working- and middle-class families, resulting in a rich opportunity for diverse intentional communities.
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section id="on-the-land-housing" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>On the Land Housing</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> 
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <section id="home-building-lodges" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Home Building Lodges</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Praries 
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Federal funding for housing on reserves typically goes directly to the construction of houses as products to meet the urgent demands of existing shortages and deplorable housing conditions. We believe that investing in Home Building Design Lodges tied to housing manufacturing facilities, on reserves, can instead build capacity within communities by grounding the production of houses, and/or their components, in community values, language and education.
+                      </p>
+                      <p>
+                        We demand that necessary funding be directed towards a pilot Home Building Design Lodge (full name to be determined later by the community) and manufacturing facility at Opaskwayak Cree Nation that would include partnerships with University College of the North and the Opaskwayak Educational Authority Inc., as well as various industry partners. The manufacturing facility will make Universal Utility Cores, as already developed by OCN and One House Many Nations, as a starting point, with the potential to manufacture houses or housing components in the future. However, this project is more than a manufacturing facility. It also includes the development of the Home Building Design Lodge as a new community centre that is woven into existing educational infrastructure. The Design Lodge establishes a hub for multigenerational teachings and learning about community-led design and making. The centre is a catalyst to disrupt current housing delivery models and allows the community to self-determine their housing future over generations. Moreover, it is a pilot for other communities that is scalable and adaptable, depending on that community's needs and capacities.
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+
+        <section id="reparative-planning" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Reparative Planning to Rebuild Black Communities</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Toronto
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                        <p>
+                            Reparative planning is required to address the displacement of Black lives in c\a\n\a\d\a by government led infrastructure projects.
+                        </p>
+                        <p>
+                            We demand that Black residents of Toronto’s Little Jamaica who have been displaced or are at the risk of being displaced due to transit infrastructure and inequitable planning policies are wholly compensated by those governments responsible. We demand that these reparations occur through land use and economic policies that enable displaced Black residents the right to return and rebuild their community in Little Jamaica through government funded community cooperative housing and land trusts for the Black community to own and operate within major transit stations areas of Little Jamaica.
+                        </p>
+                        <h4>Financial Policy and Framework:</h4>
+                        <p>
+                            The financial and policy framework is that all three levels of government would provide immediate and substantial funding to ensure Black and Caribbean residents are economically included in the governance and implementation of planning and constructing of affordable housing in Little Jamaica. This includes Community Benefit Charges, Inclusionary Zoning and other funding mechanisms to support community land trusts to generate equity (wealth) for the tenants living in the housing. The understanding is that wealth generation is key to breaking the systems of poverty marginalizing lower income renters.
+                        </p>
+
+                        <h4>The Activist Campaign Strategy:</h4>
+                        <p>
+                            The activist campaign consists of a series of community-led consultations sessions to build awareness of community owned co-op housing and CLT-owned units across future residential development and identify a list of priorities specific to the Little Jamaica area. This would be followed by a public release of the priorities through an event inviting local representatives and stakeholders from all levels of government, and continuous social media ads, physical posters and coalition building with the residents of other neighbourhoods facing similar pressures.
+                        </p>
+
+                        <h4>The Architectural Design Strategy:</h4>
+                        <p>
+                            The architectural design strategy focuses on the design, articulation, and visualization of cooperative housing typologies that can be developed and built within dense urban environments in c\a\n\a\d\a. We intend to illustrate ways co-ops and land trusts can provide housing types that accommodate safety, density, accessibility, aging in place, live-work opportunities, diverse family structures, human dignity, climate justice, and aesthetic beauty. We intend to focus on a site(s) in Toronto’s Little Jamaica to address specific cultural issues and needs of that community with the assumption that there will be many similarities to other communities across c\a\n\a\d\a.
+                        </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+
+        <section id="intentional-communities-for-unhoused" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2> Intentional Communities for Unhoused People</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Toronto
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Across c\a\n\a\d\a, there is a rapidly expanding gap between ''living rough'' on the street or in self-made encampments, and gaining access to long-ter,n housing. To support unhoused people, cities must use under-utilized land to fund and build intentional communities where residents receive services, share community responsibilities, and regain agency to govern the space and their lives. 
+                      </p>
+                      <p>
+                        Following consultation with unhoused Torontonians, we plan to develop a prototypical cluster of 12-15 cabins, plus community facilities, across 40 parking spots within a parking lot in downtown Toronto. Our goal is to provide a suitable alternative to living In a tent when the municipal shelter system is not an alternative. To achieve this vision, local politicians, city council members, and community organizations must be unified in support, zoning bylaws must be amended where necessary, and a basis of trust must be earned between the Intentional community providers and prospective residents.
+
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+
+        <section id="the-unearned-increment" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>The Unearned Increment</h2>
+
+
+                        <p>
+                            Toronto needs a mechanism to channel the profit generated by land value increase into the communities who created it, and from whom this value is being taken. <em>(This would be a slightly longer decription of the demand...)</em>
+
+
+                        </p>
+                        <label>region:</label> Toronto
+                        <br />
+                        <label>Activist:</label> Gentrification Tax Action                
+                        <br />
+                        <label>Advocate:</label> 
+Parkdale Neighborhood Land Trust
+<br />
+<label>Architect:</label>
+Levitt Goodman Associates
+
+                    </div>
+                    <div class="six columns">
+                        <img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/Affordable%20Parkdale%201.jpeg?itok=hcX127WD" />
+                        <p class="caption">This is a caption</p>
+
+                        <p>
+                            We demand to tax the unearned increment to finance land trusts that acquire private rental housing and transform it into deeply affordable homes. The unearned increment is the value embedded in real estate, that is not created by a private owner, but rather has been built by Indigenous people, local cultures, tenants, neighbourhoods, publicly funded infrastructure and non-human biotic and abiotic ecologies. This value must be reinvested in affordable housing land trusts, in order to keep this value in the community that created it.
+                        </p>
+                        <p>
+                            The City of Toronto should create a hypothecated tax on the unearned increment of real estate, earmarked to create a reliable and dedicated revenue stream to maintain deeply affordable housing for locally governed community land trusts. This tax could allow multi-unit rental buildings to be purchased and secured as affordable housing. The aggregation of formerly private rental properties into a network of Land Trust properties should create new public spaces in Toronto neighbourhoods.
+                        </p>
+                    
+
+                        <p>
+                            We demand to tax the unearned increment to finance land trusts that acquire private rental housing and transform it into deeply affordable homes. The unearned increment is the value embedded in real estate, that is not created by a private owner, but rather has been built by Indigenous people, local cultures, tenants, neighbourhoods, publicly funded infrastructure and non-human biotic and abiotic ecologies. This value must be reinvested in affordable housing land trusts, in order to keep this value in the community that created it.
+                        </p>
+                        <p>
+                            The City of Toronto should create a hypothecated tax on the unearned increment of real estate, earmarked to create a reliable and dedicated revenue stream to maintain deeply affordable housing for locally governed community land trusts. This tax could allow multi-unit rental buildings to be purchased and secured as affordable housing. The aggregation of formerly private rental properties into a network of Land Trust properties should create new public spaces in Toronto neighbourhoods.
+                        </p>
+                    
+
+                        <p>
+                            We demand to tax the unearned increment to finance land trusts that acquire private rental housing and transform it into deeply affordable homes. The unearned increment is the value embedded in real estate, that is not created by a private owner, but rather has been built by Indigenous people, local cultures, tenants, neighbourhoods, publicly funded infrastructure and non-human biotic and abiotic ecologies. This value must be reinvested in affordable housing land trusts, in order to keep this value in the community that created it.
+                        </p>
+                        <p>
+                            The City of Toronto should create a hypothecated tax on the unearned increment of real estate, earmarked to create a reliable and dedicated revenue stream to maintain deeply affordable housing for locally governed community land trusts. This tax could allow multi-unit rental buildings to be purchased and secured as affordable housing. The aggregation of formerly private rental properties into a network of Land Trust properties should create new public spaces in Toronto neighbourhoods.
+                        </p>
+                    
+
+                        <p>
+                            We demand to tax the unearned increment to finance land trusts that acquire private rental housing and transform it into deeply affordable homes. The unearned increment is the value embedded in real estate, that is not created by a private owner, but rather has been built by Indigenous people, local cultures, tenants, neighbourhoods, publicly funded infrastructure and non-human biotic and abiotic ecologies. This value must be reinvested in affordable housing land trusts, in order to keep this value in the community that created it.
+                        </p>
+                        <p>
+                            The City of Toronto should create a hypothecated tax on the unearned increment of real estate, earmarked to create a reliable and dedicated revenue stream to maintain deeply affordable housing for locally governed community land trusts. This tax could allow multi-unit rental buildings to be purchased and secured as affordable housing. The aggregation of formerly private rental properties into a network of Land Trust properties should create new public spaces in Toronto neighbourhoods.
+                        </p>
+                    
+
+                        <div class="main-carousel">
+                            <div class="carousel-cell">
+                                <img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/AAHA_unit_3cc.jpg?itok=BppEniI5">
+                                <p class="caption">example caption</p>
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/AAHA_unit_2cc.jpg?itok=pPtOD-xP">
+                                <p class="caption">example caption</p>
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/AAHA_unit_1cc.jpg?itok=8t0Is5R_">
+                                <p class="caption">example caption</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sticky-demo">TAKE ACTION</div>
+                    <div class="action-bar three columns sticky-bottom white-bg">
+                        <h3>TAKE ACTION</h3>
+
+                        <ul class="actions">
+                            <li>
+                                <label class="label--red">donate</label><br />
+                                Learn more about the campaign to for a gentrification tax 
+                                in Toronto by visiting <label>this page.</label>
+                                <br/>
+                                <label>PAY THE VOLUNTARY TAX</label>
+                            </li>
+                            <li>
+                                <label class="label--red">donate</label><br />
+                                Learn more about the campaign to for a gentrification tax 
+                                in Toronto by visiting <label>this page.</label>
+                                <br/>
+                                <label>PAY THE VOLUNTARY TAX</label>
+                            </li>
+                            <li>
+                                <label class="label--red">donate</label><br />
+                                Learn more about the campaign to for a gentrification tax 
+                                in Toronto by visiting <label>this page.</label>
+                                <br/>
+                                <label>PAY THE VOLUNTARY TAX</label>
+                            </li>                            
+                            <li>
+                                <label class="label--red">donate</label><br />
+                                Learn more about the campaign to for a gentrification tax 
+                                in Toronto by visiting <label>this page.</label>
+                                <br/>
+                                <label>PAY THE VOLUNTARY TAX</label>
+                            </li>
+
+                            <li>
+                                <label class="label--red">Sign</label><br />
+                                Advocate for taxing the unearned incremenet at city hall by signing the petition below:</em>
+                                <br/>
+                                <label>Sign here</label>
+                            </li>
+
+                        <li>
+                             <label class="label--red">participate</label><br />
+                               Attend one of the forthcoming Parkdale Community Information Sessions hosted by PNLT
+                                <label>RSVP FOR AN INFORMATION SESSION</label>
+                        </li>
+                    </ul>
+
+                                   
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        
+
+        <section id="mutual-aid-housing" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Mutual Aid Housing</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Montreal
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Typical solutions to the problem of housing affordability often push social housing sites to marginal locations with poor access to transit, jobs, social services, and cultural amenities, while expensive plots of land in the city’s centre are reserved for profit-making developments. When social housing (and much private market multi-family middle-income housing) is built, all communal programs and spaces are cut for budget reasons. Only bare-bones units of housing get built. This leaves housing units isolated and unsupported, leading to disconnection and lack of functioning. When newcomers arrive in c\a\n\a\d\a, or refugees relocate to c\a\n\a\d\a, and arrive in such units of housing, they are left vulnerable to these flaws. 
+                      </p>
+                      <p>
+                        We demand that high-density social housing be built in the urban core on gifted land set up as a community land trust that provides access to transit, jobs, and social services, and that is big enough to cultivate community and include expanded and supportive programming responsive to neighborhood needs. Only decommodified housing can provide the expanded shared spaces for communal programs, setting the foundations for a practice of mutual aid where community members work together to meet their needs through cooperation. Further supportive programming for refugee resettlement, managed through a mutual aid approach within an accommodating environment, must be included to respond to neighbourhood needs. It is only by combining the creation of community-driven housing with supportive programs for social cohabitation that we will be able to end housing alienation. 
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+
+        <section id="ambient-ecosystems" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+                        <h2>Ambient Ecosystems Commons</h2>
+
+
+                        <p>
+                        </p>
+                        <label>region:</label> Montreal
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Typical solutions to the problem of housing affordability often push social housing sites to marginal locations with poor access to transit, jobs, social services, and cultural amenities, while expensive plots of land in the city’s centre are reserved for profit-making developments. When social housing (and much private market multi-family middle-income housing) is built, all communal programs and spaces are cut for budget reasons. Only bare-bones units of housing get built. This leaves housing units isolated and unsupported, leading to disconnection and lack of functioning. When newcomers arrive in c\a\n\a\d\a, or refugees relocate to c\a\n\a\d\a, and arrive in such units of housing, they are left vulnerable to these flaws. 
+                      </p>
+                      <p>
+                        We demand that high-density social housing be built in the urban core on gifted land set up as a community land trust that provides access to transit, jobs, and social services, and that is big enough to cultivate community and include expanded and supportive programming responsive to neighborhood needs. Only decommodified housing can provide the expanded shared spaces for communal programs, setting the foundations for a practice of mutual aid where community members work together to meet their needs through cooperation. Further supportive programming for refugee resettlement, managed through a mutual aid approach within an accommodating environment, must be included to respond to neighbourhood needs. It is only by combining the creation of community-driven housing with supportive programs for social cohabitation that we will be able to end housing alienation. 
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <section id="surplus-properties-for-housing" class="demand">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        <h5>To decomodify housing in c/a/n/a/d/a we demand</h5>
+     
+                            <h2>Surplus Properties for Housing</h2>
+     
+                        <label>region:</label> Atlantic
+                        <br />
+                        <label>Activist:</label>
+                        <br />
+                        <label>Advocate:</label>
+                        <br />
+                        <label>Architect:</label>
+
+
+                    </div>
+                    <div class="six columns">
+                      <p>
+                        Municipal, Provincial, and Federal governments own an immense number of properties that are sitting idle - often in the form of vacant buildings and empty parcels. We demand that this surplus be made available for the development of affordable housing.
+                      </p>
+                      <p>                       
+                        We have developed a case study for this demand in Halifax, Nova Scotia, where the advocacy group This Should Be Housing has developed a map inventory of surplus properties suitable for housing. To demonstrate the viability and immense potential of this demand we have selected a surplus piece of property currently owned by the Halifax Regional Municipality: The Grey Arena in the Dartmouth neighbourhood. For years the arena structure and the land surrounding it has sat empty – all while the housing shortage in the city becomes more acute. The existing structure and land must be used for affordable housing now!
+                    </p>
+                    <p>                        
+                        To achieve a beneficial use of this property, and similar ones across the country, we propose a mosaic community programming strategy alongside a mosaic funding model. This entails a thorough mapping of the larger existing context to determine a particular set of community needs to be deployed in a pixelated pattern across the site. At the same time a mosaic funding pattern redeploys existing resources and in a novel fashion and demonstrates how these projects are easily within reach with the right social and political will.
+                    </p>
+                    <p>                        
+                        With this mosaic strategy we can achieve housing that provides mass affordability while incorporating a wide array of housing types and community spaces that are responsive to the specific needs of the community.
+                      </p>
+                    </div>
+                    <div class="three columns small--fixed">
+                        <h3>TAKE ACTION</h3>
+
+                        
+
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        
+        <section id="collective">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="three columns sticky">
+                        
+                        <h2>Collective</h2>
+                    </div>
+                    <div class="six columns sticky">
+                        <p>
+                            Architects Against Housing Alienation (AAHA) is an activist collective, formed to instigate an architectural movement to create culturally, legally, spiritually, socially, ecologically, and creatively empowering housing for all. The six founding members of AAHA— Adrian Blackwell, David Fortin, Matthew Soules, Sara Stevens, Patrick Stewart, and Tijana Vujosevic—are launching a campaign actively advocating for de-commodified housing in the land now known as c\a\n\a\d\a. They share the conviction that architects play a key role in instigating, fueling, and sustaining this movement. A combination of architects, academics, and historians, the collective’s organizing committee aspires to connect architects to the already growing movement for housing that works for everyone, and is accessible for everyone. 
+                        </p>
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <table class="table--listing">
+                <!-- <tr class="action region--toronto">
+                    <td><label>Toronto</label></td>
+                    <td><label>The Unearned Increment</label></td>
+                    <td><h3>Pay the voluntary tax</h3></td>
+                    <td><p class="small">Additional text description would go here.</p></td>
+                    <td>01.23.2023—07.23.2023</td>
+                </tr>      -->
+                
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>Adrian Blackwell</h3></td>
+                    <td><label>University of Waterloo School of Architecture</label></td>
+                    
+                    <td> <p class="small">Adrian Blackwell is an artist, designer, theorist, and educator, whose work focuses on the relation between physical spaces and political economic forces.</p></td>
+                </tr>
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>David T Fortin</h3></td>
+                    <td><label>University of Waterloo School of Architecture</label></td>
+                    
+                    <td> <p class="small">David Fortin is a citizen of the Métis Nation of Ontario and a professional architect who runs a small architectural office working primarily with Métis and First Nations communities across c\a\n\a\d\a and co-curator for UNCEDED at the 2018 Venice Biennale.</p></td>
+                </tr>
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>Matthew Soules</h3></td>
+                    <td><label>University of British Columbia School of Architecture and Landscape Architecture</label></td>
+                    
+                    <td> <p class="small">Matthew Soules is an architect and researcher who focuses on contemporary capitalism and architecture and has written about the rise of finance capitalism and architecture.</p></td>
+                </tr>
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>Sara Stevens</h3></td>
+                    <td><label>University of British Columbia School of Architecture and Landscape Architecture</label></td>
+                    
+                    <td> <p class="small">Sara Stevens is an architectural and urban historian whose research focuses on real estate developers of the twentieth century..</p></td>
+                </tr>         
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>Luugigyoo Patrick Stewart</h3></td>
+                    <td><label>Laurentian University McEwen School of Architecture</label></td>
+                    
+                    <td> <p class="small">Luugigyoo Patrick Stewart is a member of the Killerwhale House of Daaxan of the Nisga’a Nation and an award-winning architect with 27 years of architectural experience who was the first architect of First Nations ancestry to own and operate an architectural firm in British Columbia, and an exhibiting architect with UNCEDED at the 2018 Venice Biennale.</p></td>
+                </tr>         
+                <tr>
+                    <td><img src=""></td>
+                    <td><h3>Tijana Vujosevic</h3></td>
+                    <td><label>University of British Columbia School of Architecture and Landscape Architecture</label></td>
+                    
+                    <td><p class="small">Tijana Vujosevics an architectural historian whose research focuses on communist and feminist forms of domesticity.</p></td>
+                </tr>                          
+
+
+           
+            </table>
+
+                 
+
+       
+        </section>
+        <section id="take-action">
+            
+            
+
+                <div class="container">
+                    <div class="row">
+                        <div class="three columns">
+                            <h2>Take Action</h2>
+                        </div>
+                        <div class="nine columns">Action is at the core of the AAHA Campaign. It is one thing to envision a more equitable housing future for all, but visions mean nothing without change. Action begins with building awareness about how architects, advocates, and activists can come together to propose innovative ways to reconfigure our built environment to empower people against housing discrimination and injustice. In advance of the campaign launch in Venice, AAHA will host a series of academic and community round tables to expand our reach through our networks. An energetic social media campaign will weave itself into the global community and we will work with our activists to seek the best ways to mobilize support for the demands through in-person events. Our website will support visitors to join the AAHA movement and directly participate—by signing petitions, sending letters to local representatives, joining aligned organizations, donating, and showing up at events and rallies. 
+                        </div>
+                    </div>
+                    <button class="f" data-filter=".region--vancouver">vancouver</button>
+                    <button class="f" data-filter=".region--northern">northern</button>
+                    <button class="f" data-filter=".region--praries">praries</button>
+                    <button class="f" data-filter=".region--toronto">toronto</button>
+                    <button class="f" data-filter=".region--montreal">montréal</button>
+                    <button class="f" data-filter=".region--atlantic">atlantic</button>
+                    <button class="f" data-filter=".action">all</button>
+                    <br />
+                    <button class="f" data-filter=".type--sign">sign</button>
+                        <button class="f" data-filter=".type--join">join</button>
+                        <button class="f" data-filter=".type--donate">donate</button>
+                        <button class="f" data-filter=".type--participate">participate</button>
+                        <button class="f" data-filter=".type--follow">follow</button>
+                        <button class="f" data-filter=".action">all</button>
+                    </div>
+                <table class="table--listing">
+                    <tr class="action type--donate region--toronto">
+                        <td><label class="label--red">donate</label></td>
+                        <td><label>Toronto</label></td>
+                        <td><label>The Unearned Increment</label></td>
+                        <td><h3>Pay the voluntary tax</h3></td>
+                        <td><p class="small">Additional text description would go here.</p></td>
+                        <td>01.23.2023—07.23.2023</td>
+                    </tr>
+
+                    <tr class="action region--montreal">
+                        <td><label class="label--red">join</label></td>
+                        <td><label>Montreal</label></td>
+                        <td><label>Mutual Aid Housing</label></td>
+                        <td><h3>Sign a petition.</h3></td>
+                        <td><p class="small">Additional text description would go here.</p></td>
+                        <td>01.23.2023—07.23.2023</td>
+                    </tr>
+
+                    <tr class="action region--toronto">
+                        <td><label class="label--red">follow</label></td>
+                        <td><label>Toronto</label></td>
+                        <td><label>The Unearned Increment</label></td>
+                        <td><h3>Follow this link:</h3></td>
+                        <td><p class="small"><a href="https://www.youtube.com/watch?v=aCiYmCVikjo" target="_blank">youtube.com/watch?v=aCiYmCVikjo</a></p></td>
+                        <td>01.23.2023—07.23.2023</td>
+                    </tr>
+
+                    <tr class="action">
+                        <td><label class="label--red">join</label></td>
+                        <td><label>Kamloops</label></td>
+                        <td><label>The Unearned Increment</label></td>
+                        <td><h3>Action title here</h3></td>
+                        <td><p class="small">Additional text description would go here. Additional text description would go here.Additional text description would go here.</p></td>
+                        <td>01.23.2023—07.23.2023</td>
+                    </tr>
+
+                    <tr class="action">
+                        <td><label class="label--red">participate</label></td>
+                        <td><label>Kingston</label></td>
+                        <td><label>The Unearned Increment</label></td>
+                        <td><h3>Something.</h3></td>
+                        <td><p class="small">Additional text description would go here.</p></td>
+                        <td>01.23.2023—07.23.2023</td>
+                    </tr>
+                </table>
+
+            
+        </section>
+
+        <section id="contact" class="inverse">
+            <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    A short description of the organization and its founding goes here. With a link to the about page.<br />
+            Below that, here will be the logos from all the of the funding bodies.
+
+            
+                </div>
+                <div class="three columns">
+            A site map goes here. In essence, the menu:
+
+            <ul class="label">
+
+                
+                
+
+
+
+
+
+
+            <li><a href="/">DEMAND</a></li>
+            <li><a href="/">MANIFESTO</a></li>
+            <li><a href="/">TAKE ACTION</a></li>
+            <li><a href="/">EVENTS</a></li>
+            <li><a href="/">COLLECTIVE</a></li>
+            <li><a href="/">CONTACT</a></li>
+            </ul>
+                </div>
+                <div class="three columns">
+                    <div class="socials">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    </div>
+            followed by contact details and credits?
+            </div>
+        
+        <div style="text-align:center;padding-top:6em;">
+            <?xml version="1.0" encoding="UTF-8"?><svg id="bottom_fist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197 211"><path d="m97.68,211H3.42c-2.69,0-3.4-.71-3.4-3.43C.02,169.77.03,137.97,0,100.17c0-3.9,1.36-7.04,4.15-9.76,6.95-6.76,13.8-13.62,20.69-20.45,7.99-7.92,15.97-15.84,23.95-23.75,5.04-4.99,10.09-9.97,15.13-14.97,1.38-1.36,1.92-1.37,3.28,0,15.1,15.11,30.19,30.23,45.29,45.34,1.67,1.67,1.67,2.91.04,4.55-4.83,4.83-9.65,9.67-14.48,14.5-1.48,1.48-2.82,1.49-4.3.01-5.2-5.2-10.4-10.41-15.6-15.62-3.2-3.2-7.52-3.28-10.76-.08-4.6,4.53-9.13,9.12-13.69,13.69-1.02,1.02-1.23,2.13-.67,3.17.53.97,1.6,1.51,2.68,1.17.58-.18,1.14-.58,1.58-1.02,4.34-4.31,8.65-8.64,12.97-12.97,1.95-1.95,3.02-1.96,4.94-.04,5.02,5.02,10.03,10.04,15.04,15.06,3.53,3.53,7.72,3.54,11.22.04,4.89-4.88,9.79-9.74,14.67-14.62,2.83-2.83,3.32-6.48,1.29-9.56-.35-.53-.8-1-1.25-1.45-15.12-15.14-30.24-30.28-45.36-45.42-1.57-1.57-1.57-1.99.04-3.58,7.48-7.41,14.95-14.83,22.43-22.23,2.98-2.95,6.97-2.93,9.95.05,5.39,5.39,10.78,10.78,16.16,16.18,1.24,1.24,1.25,1.89.01,3.12-6.75,6.76-13.5,13.51-20.23,20.28-.44.44-.89.98-1.06,1.56-.29,1.01.03,1.95.94,2.58.9.61,1.85.61,2.76.02.41-.26.74-.64,1.08-.99,6.67-6.67,13.34-13.35,20.01-20.02,1.22-1.22,1.8-1.22,3.01,0,6.62,6.62,13.23,13.24,19.84,19.87,1.22,1.22,1.22,1.79,0,3.01-6.77,6.78-13.54,13.57-20.33,20.34-.75.75-1.35,1.56-1.05,2.69.45,1.74,2.4,2.42,3.85,1.36.33-.24.62-.55.91-.84,6.68-6.68,13.35-13.36,20.03-20.05,1.28-1.28,1.82-1.29,3.09-.01,6.59,6.59,13.18,13.19,19.76,19.79,1.28,1.28,1.28,1.81,0,3.09-9.97,9.99-19.95,19.97-29.92,29.96-.37.37-.75.75-1.06,1.17-.74,1.01-.59,2.37.29,3.19.86.8,2.28.85,3.21.09.29-.24.55-.52.81-.78,10-10.01,20-20.03,30.01-30.04,1.4-1.4,1.93-1.4,3.35.02,5.25,5.26,10.51,10.52,15.76,15.78,3.35,3.36,3.34,7.51-.02,10.88-8.83,8.84-17.65,17.68-26.49,26.51-.86.86-1.42,1.76-.9,3.02.64,1.53,2.43,2.01,3.75.99.3-.23.55-.51.82-.78,6.32-6.33,12.65-12.65,18.96-18.99.92-.92,1.89-1.5,3.22-.96.96.4,1.48,1.12,1.55,2.16.02.3,0,.6,0,.91v90.41c0,2.5-.74,3.24-3.22,3.24h-94.49Z"/></svg>
+        </div>
+        </div>
+
+
+        </section>
+
+
+        
+
+       
+
+        <div id="lang">
+            <div class="active">EN</div>
+            <div>FR</div>
+        </div>
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js" integrity="sha512-PsJ1f4lw0Jrga4wbDOvdWs9DFl88C1vlcH2VQYqgljHBmzmqtGivUkzRHWx2ZxFlnysKUcROqLeuOpYh9q4YNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- <script src="/js/fullscreen.js"></script>  -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
