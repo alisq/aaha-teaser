@@ -482,6 +482,9 @@ ul.actions {
       padding: 0.5em;
       border-bottom: 1px solid #3C3C3C; }
 
+#mobile-logo {
+  display: none; }
+
 @media (max-width: 800px) {
   #menu-button {
     top: 0.5em;
@@ -489,15 +492,29 @@ ul.actions {
   #menu-fist {
     top: 0.8rem;
     right: 0.5rem; }
-  .manifesto .num {
-    width: 0.2em;
-    text-align: right; }
-  .manifesto h2 {
-    padding: 0 0 0 0.2em;
-    margin: 0;
-    line-height: 1.3em;
-    text-indent: -0.2em; }
+  .manifesto {
+    text-transform: uppercase;
+    font-size: 30px; }
+    .manifesto #manifesto-intro {
+      display: block;
+      color: #c00000;
+      text-align: center;
+      padding-bottom: 1em;
+      font-size: 3.5rem; }
+    .manifesto h2 {
+      margin: 0;
+      padding: 0 0.2em 0.2em 1em;
+      line-height: 1.1em;
+      text-indent: -0.67em;
+      font-size: 3.5rem; }
+      .manifesto h2 .num {
+        padding-left: 0.5em;
+        width: 0.6em;
+        text-align: left; }
+  #socials {
+    display: none; }
   h1 {
+    display: none;
     position: static;
     height: auto;
     max-width: 80%;
@@ -515,6 +532,14 @@ ul.actions {
         display: block; }
       h1.fr .title-top {
         display: none; }
+  #mobile-logo {
+    display: block;
+    text-align: center; }
+    #mobile-logo svg {
+      display: inline-block;
+      fill: #c00000;
+      width: 60px;
+      margin: 1em; }
   .manifesto {
     font-size: 2em;
     text-align: left;
