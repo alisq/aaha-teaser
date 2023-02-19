@@ -23,7 +23,7 @@ img {
 
 @font-face {
   font-family: 'AAHA-WEB';
-  src: url("../css/fonts/AAHA-Regular.woff2") format("woff");
+  src: url("../css/fonts/AAHA-Regular.04.15.woff2") format("woff");
   font-weight: normal; }
 
 body {
@@ -270,24 +270,39 @@ h1 {
 .title-bottom.invert {
   color: #F5F5F5 !important; }
 
-#lang {
-  width: 80px;
+#socials {
+  width: 200px;
   height: 30px;
   cursor: pointer;
   position: fixed;
   z-index: 12;
-  bottom: 1em;
-  right: 1em;
+  bottom: 2em;
+  right: 2em;
   transform-origin: 50% 50%;
-  transition: all 0.4s; }
-  #lang div {
+  transition: all 0.4s;
+  text-align: right; }
+  #socials i {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #c00000;
+    padding: 0.25em;
+    color: #F5F5F5;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 2px; }
+    #socials i:first-of-type {
+      margin-left: 10px; }
+    #socials i:hover {
+      background: #3C3C3C;
+      color: #c00000; }
+  #socials div {
     display: inline-block;
     border-radius: 2px;
     transition: all 0.4s;
     padding: 0.2em 0.3em 0;
     color: #c00000;
     font-family: aaha-web; }
-    #lang div:hover, #lang div.active {
+    #socials div:hover, #socials div.active {
       color: rgba(245, 245, 245, 0.9);
       background: #c00000; }
 
@@ -493,7 +508,6 @@ ul.actions {
       position: static;
       display: block; }
     h1 .title-bottom {
-      transform: rotate(0);
       display: none; }
     h1.fr {
       transform: rotate(0); }

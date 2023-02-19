@@ -100,16 +100,37 @@ h1 {
 
 
 
-#lang {
+#socials {
 
-    width:80px;height:30px;
+    width:200px;height:30px;
     cursor: pointer;
     position:fixed;
     z-index:12;
-    bottom:1em;
-    right:1em;
+    bottom:2em;
+    right:2em;
     transform-origin: 50% 50%;
     transition:all $transition-time;
+    text-align: right;
+
+    & i {
+        font-size:1.2em;
+        display:inline-block;
+        background:$red;
+        padding:0.25em;
+        color:$background;
+        transition:all $transition-time;
+        cursor:pointer;
+        border-radius: 2px;;
+        
+        &:first-of-type {
+            margin-left:10px;;
+        }
+        &:hover {
+            background:$foreground;
+            color:$red;
+        }
+
+    }
 
     & div {
         display:inline-block;
@@ -483,7 +504,7 @@ ul.actions {
         }
 
         & .title-bottom {
-            transform: rotate(0);
+            // transform: rotate(0);
             display:none;
         }
 
