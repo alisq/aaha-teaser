@@ -494,19 +494,19 @@ ul.actions {
     right: 0.5rem; }
   .manifesto {
     text-transform: uppercase;
-    font-size: 30px; }
+    font-size: 9vw; }
     .manifesto #manifesto-intro {
       display: block;
       color: #c00000;
       text-align: center;
       padding-bottom: 1em;
-      font-size: 3.5rem; }
+      font-size: 9vw; }
     .manifesto h2 {
       margin: 0;
       padding: 0 0.2em 0.2em 1em;
       line-height: 1.1em;
       text-indent: -0.67em;
-      font-size: 3.5rem; }
+      font-size: 9vw; }
       .manifesto h2 .num {
         padding-left: 0.5em;
         width: 0.6em;
